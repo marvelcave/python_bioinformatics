@@ -1,0 +1,25 @@
+# Count A, C, T, G in sequence, respectively 
+DNA = 'ATGCGCTACCT.............................' # Enter the DNA sequence as a string here
+
+A = []
+C = []
+T = []
+G = []
+
+for a in DNA:
+    if a == 'A':
+        A.append(a)
+for c in DNA:
+    if c == 'C':
+        C.append(c)
+for t in DNA:
+    if t == 'T':
+        T.append(t)
+for g in DNA:
+    if g == 'G':
+        G.append(g)
+
+print('Number of Bases A =', len(A))
+print('Number of Bases C =', len(C))
+print('Number of Bases T =', len(T))
+print('Number of Bases G =', len(G))
