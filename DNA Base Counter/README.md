@@ -1,0 +1,1 @@
+The folder contains Python code that I used to calculate the number of bases in a DNA sequence. The purpose of this Python code is to complete the challenge on the website https://rosalind.info/problems/dna/.
