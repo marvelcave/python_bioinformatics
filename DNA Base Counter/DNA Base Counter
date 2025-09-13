@@ -1,6 +1,5 @@
-# Count A, C, T, G in sequence, respectively 
-DNA = input() # Enter the DNA sequence as a string here, like ATCGCGCTATCGGCTAGCAT... etc
-
+# First Method (using 'for' loop)
+DNA = input() #Input the DNA sequence here, like TAGCTAGCTAGC...etc (just sequence, dont give any attributes like " or '')
 A = []
 C = []
 T = []
@@ -18,6 +17,19 @@ for t in DNA:
 for g in DNA:
     if g == 'G':
         G.append(g)
+
+print('Number of Bases A =', len(A))
+print('Number of Bases C =', len(C))
+print('Number of Bases T =', len(T))
+print('Number of Bases G =', len(G))
+
+# Second method (using list comprehention)
+DNA = input() #Input the DNA sequence here, like TAGCTAGCTAGC...etc (just sequence, dont give any attributes like " or '')
+
+A = [A.append(a) for a in DNA if a == 'A']
+C = [C.append(c) for c in DNA if c == 'C']
+T = [T.append(t) for t in DNA if t == 'T']
+G = [G.append(g) for g in DNA if g == 'G']
 
 print('Number of Bases A =', len(A))
 print('Number of Bases C =', len(C))
