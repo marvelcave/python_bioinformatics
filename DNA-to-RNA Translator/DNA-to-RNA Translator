@@ -1,0 +1,28 @@
+# First Method (using 'for' loop + conditional statement)
+DNA = input() # Input DNA sequences here
+RNA = []
+
+for nt in DNA:
+    if nt == 'T':
+        RNA.append('U')
+    else:
+        RNA.append(nt)
+
+print(DNA)
+print(''.join(RNA))
+
+# Second Method (Short, using list comprehension)
+DNA = input() # Input DNA sequences here
+
+RNA = [nt.replace('T','U') for nt in DNA]
+
+print(DNA)
+print(''.join(RNA))
+
+# Third Method (Shorter, just using replace() function)
+DNA = input() # Input DNA sequences here
+
+RNA = DNA.replace('T', 'U')
+
+print(DNA)
+print(''.join(RNA))
