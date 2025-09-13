@@ -1,5 +1,5 @@
 # First Method (using 'for' loop)
-DNA = input() # Enter the DNA sequence as a string here
+DNA = input() #Input the DNA sequence here, like TAGCTAGCTAGC...etc (just sequence, dont give any attributes like " or '')
 A = []
 C = []
 T = []
@@ -24,7 +24,7 @@ print('Number of Bases T =', len(T))
 print('Number of Bases G =', len(G))
 
 # Second method (using list comprehention)
-DNA = input() # Enter the DNA sequence as a string here
+DNA = input() #Input the DNA sequence here, like TAGCTAGCTAGC...etc (just sequence, dont give any attributes like " or '')
 
 A = [A.append(a) for a in DNA if a == 'A']
 C = [C.append(c) for c in DNA if c == 'C']
